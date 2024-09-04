@@ -1,0 +1,13 @@
+// ABSTRACTS - gathers all Sass tools and helpers used across the project. Every global variable, function, mixin and placeholder should be put in here.
+@use "abstracts";
+
+// BASE - holds what we might call the boilerplate code for the project.
+@use "base";
+
+// VENDORS - containing all the CSS files from external libraries and frameworks
+
+// COMPONENTS - is more focused on widgets. It contains all kind of specific modules like a slider, a loader, a widget, and basically anything along those lines. 
+
+// LAYOUT - contains everything that takes part in laying out the site or application.
+
+// PAGES - page-specific styles

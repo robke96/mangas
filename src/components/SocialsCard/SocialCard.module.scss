@@ -1,0 +1,20 @@
+@use "@/sass/abstracts" as *;
+
+.socialIcons {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 20%;
+    justify-content: space-around;
+
+    @include md() {
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+    }
+
+    .icon {
+        cursor: pointer;
+    }
+}

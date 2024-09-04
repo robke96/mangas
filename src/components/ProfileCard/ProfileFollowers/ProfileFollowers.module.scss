@@ -1,0 +1,33 @@
+@use "@/sass/abstracts" as *;
+
+.container {
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: 1.5rem;
+    
+    @include md() {
+        padding: .25rem 0;
+        width: 95%;
+        justify-content: flex-start;
+    }
+
+    .followWrapper {
+        position: relative;
+        text-align: center;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -12%;
+            transform: translate(-12%, -50%);
+            width: 0.125em;
+            height: 3.125em;
+            background-color: $text_secondary;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+    }
+}

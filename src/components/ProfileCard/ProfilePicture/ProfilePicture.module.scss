@@ -1,0 +1,23 @@
+@use "@/sass/abstracts" as *;
+
+// 📸 Profilio Nuotrauka
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @include md() {
+        padding: 1rem 1.5rem;
+    }
+    
+    .profilePic {
+        cursor: pointer;
+        border-radius: 1.2rem;
+        margin-bottom: .5rem;
+        max-width: none;
+
+        @include md() {
+            // margin-top: 0.5rem;
+        }
+    }
+}

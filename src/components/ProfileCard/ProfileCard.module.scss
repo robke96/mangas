@@ -1,0 +1,36 @@
+@use "@/sass/abstracts" as *;
+
+// 🪪 Profile Card
+.profileCard {
+    grid-area: profile;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: $sm_card_maxWidth;
+
+    @include md() {
+        flex-direction: row;   
+        max-width: $md_card_maxWidth;
+    }
+
+// 🔴🎥 Live blinking button
+    .liveButton {   
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1rem;
+
+        @include md() {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

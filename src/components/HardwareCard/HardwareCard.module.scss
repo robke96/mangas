@@ -1,0 +1,32 @@
+@use "@/sass/abstracts" as *;
+
+.container {
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.componentContainer {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    // min-height: 10rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: .75rem;
+    
+    @include md() {
+        font-size: unset;
+    }
+
+    .iconContainer {
+        flex: 0 0 20%;
+    }
+    
+    .content {
+        text-align: center;
+        flex: 1;
+    }
+}

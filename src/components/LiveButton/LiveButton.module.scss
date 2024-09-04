@@ -1,0 +1,40 @@
+@use "@/sass/abstracts" as *;
+
+.container {
+  border: 1px solid $live_bg;
+  border-radius: 2rem;
+  width: 5rem;
+  height: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $live_text;
+  cursor: pointer;
+  text-decoration: none;
+
+  &.liveDisabled {
+    display: none;
+  }
+  
+  
+  .blinkingDot {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $live_text;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+    animation: blinker 1.5s linear infinite;
+  }
+}
+
+.loadingContainer {
+  margin-top: .25rem;
+  margin-right: 2rem;
+}
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

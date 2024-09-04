@@ -1,0 +1,33 @@
+@use "@/sass/abstracts" as *;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include md() {
+        margin-top: 1.5rem;
+        text-align: left;
+        align-items: start;
+    }
+
+    .name,
+    .tagname {
+        color: $text_primary;
+        font-weight: lighter;
+        line-height: 1.2;
+    }
+
+    .tagname {
+        color: $text_secondary;
+        font-size: 1.1rem;
+    }
+
+    .about {
+        max-width: 90%;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: .9rem;
+    }
+}

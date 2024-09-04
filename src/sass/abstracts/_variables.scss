@@ -1,0 +1,21 @@
+// Spalvos
+$bg_primary: #111111;
+$text_primary: #fafafa;
+$text_secondary: #616161;
+
+// card colors
+$card_bg: #1B1B1D;
+$card_border_color1: #AC0DD9; 
+$card_border_color2: #1d052b; 
+
+// Typography:
+$font-size: 1rem;
+$font-family: var(--font-roboto), var(--font-inter), sans-serif;
+
+// Live btn colors
+$live_bg: #650000;
+$live_text: #D60000;
+
+// Parameters
+$sm_card_maxWidth: 25rem; // Card for mobile devices
+$md_card_maxWidth: 40rem; // Card for bigger devices -> tablets -> desktop

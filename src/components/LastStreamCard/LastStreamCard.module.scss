@@ -1,0 +1,25 @@
+@use "@/sass/abstracts" as *; 
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    
+    @include md() {
+        width: 75%;
+    }
+
+    .swiperContainer {
+        padding: 1rem 0;
+        width: 95%;
+        height:  17.5rem;
+
+        @include md() {
+            height: 100%;
+        }
+    }
+
+}
